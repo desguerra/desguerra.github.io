@@ -18,13 +18,13 @@ body {
     margin: auto;
     width: 60%;
     border: 3px dashed #ae5480;
-    padding: 10 px;
+    padding: 20 px;
 }
 .content {
     margin: auto;
-    width: 60% px;
+    width: 60%;
     border: 3px dashed #ae5480;
-    padding: 10 px;
+    padding: 20 px;
 }
 .content p {
     text-align: center;
