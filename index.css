@@ -15,7 +15,7 @@ a, a:hover {
 }
 ::-webkit-scrollbar-thumb {
     background: #cdcdcd; /** color of the moving part of the scrollbar (thumb) **/
-    border: 1.5px solid #fff; /** border around moving part of scrollbar (overlaps with border of total scrollbar) **/
+    border: 1.5px solid #b5566b; /** border around moving part of scrollbar (overlaps with border of total scrollbar) **/
 }
 ::-moz-selection { /* Code for Firefox */
     color: white;
