@@ -11,7 +11,7 @@ body {
     margin: 20 px;
 }
 a, a:hover {
-    cursor: url('https://orig00.deviantart.net/e066/f/2017/256/b/4/crosshair_pixel_2_f2u_by_strawberrylychee-dbn9hsq.png'), auto;
+    cursor: crosshair, auto;
 }
 	
 ::-webkit-scrollbar {
