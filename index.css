@@ -1,8 +1,8 @@
 body, html {
     min-height: 100%;
     min-width: 100%;
-    padding: 0;
-    margin: 10 px;
+    padding: 10 px;
+    margin: 0;
     cursor: url('http://cur.cursors-4u.net/food/foo-6/foo515.cur'), auto;
 }
 a, a:hover {
