@@ -5,7 +5,19 @@ html {
     margin: 0;
     cursor: url('http://cur.cursors-4u.net/food/foo-6/foo515.cur'), auto;
 }
-a, a:hover {
+a {
+    color: #e7e7e7;
+    text-decoration: none;
+    cursor: crosshair;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+a:hover {
+    color: #ae5480;
+    text-decoration: none;
     cursor: crosshair;
 }
 body {
