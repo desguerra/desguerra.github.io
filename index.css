@@ -17,13 +17,13 @@ body {
     text-align: center;
     margin: auto;
     width: 60%;
-    border: 3px dashed #ae5480;
+    border: 3px dashed #e7e7e7;
     padding: 20 px;
 }
 .content {
     margin: auto;
     width: 60%;
-    border: 3px dashed #ae5480;
+    border: 3px dashed #e7e7e7;
     padding: 20 px;
 }
 .content p {
