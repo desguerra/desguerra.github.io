@@ -6,7 +6,7 @@ html {
     cursor: url('http://cur.cursors-4u.net/food/foo-6/foo515.cur'), auto;
 }
 a, a:hover {
-    cursor: crosshair, auto;
+    cursor: crosshair;
 }
 body {
     font-family: 'Pompiere', cursive;
