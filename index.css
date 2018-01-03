@@ -7,7 +7,7 @@ html {
 }
 a {
     color: #e7e7e7;
-    text-decoration: none;
+    text-decoration: bold;
     cursor: crosshair;
     -o-transition:.3s;
     -ms-transition:.3s;
