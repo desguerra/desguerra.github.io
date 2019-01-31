@@ -35,6 +35,13 @@ body {
     margin: 20px;
     height: 100%;
 }
+/* corner picture */
+.corner img {
+    position: fixed;
+    bottom: 0;
+    left: 4px;
+    width: 50px;
+}
 
 /* sticky content */
 .stickycontent {
@@ -57,7 +64,7 @@ body {
     border: 1px solid black;
     font-size: 22px;
     background: white;
-    padding: 10px 0px;
+    padding: 8px 0px;
 }
 .bio {
     margin: auto;
@@ -72,7 +79,7 @@ body {
     padding: 0px 12px;
 }
 .bio img {
-    max-width: 40%;
+    max-width: 37%;
     height: auto;
 }
 .topbar {
@@ -164,9 +171,6 @@ li a:hover {
 .proj-content p {
     padding: 0px 10px;
 }
-.proj-content img {
-    padding: 0px 10px;
-}
 .picgrid {
     width: auto;
     height: auto;
@@ -199,6 +203,54 @@ li a:hover {
     color: white;
     font-weight: normal;
     text-decoration: underline;
+}
+/* scroll resume */
+.scrollcontentres1 {
+    margin: 10px 0px 45px;
+    width: 32%;
+    border: 1px solid black;
+    background: none;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+}
+.scrollcontentres1 h1 {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.scrollcontentres2 {
+    margin: 10px 0px 45px;
+    width: 60%;
+    border: 1px solid black;
+    background: none;
+    position: absolute;
+    left: 3%;
+    top: 5%;
+}
+.scrollcontentres2 h1 {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: normal;
+}
+.proj-contentres {
+    text-align: left;
+    font-size: 13px;
+}
+.proj-contentres p {
+    padding: 0px 10px;
+}
+.footerres {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #2d2d2d;
+    background: white;
+}
+.footerres p {
+    text-align: center;
+    font-size: 11px;    
 }
 
 /* footer */
