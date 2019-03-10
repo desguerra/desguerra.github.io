@@ -71,7 +71,7 @@ body {
     width: 100%;
     border: 1px solid black;
     background: white;
-    font-size: 14px;
+    font-size: 12.5px;
     text-align: center;
 }
 .bio p {
@@ -277,7 +277,7 @@ li a:hover {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 1px;
     cursor: crosshair;
     -o-transition:.3s;
     -ms-transition:.3s;
