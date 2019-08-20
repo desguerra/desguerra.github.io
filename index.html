@@ -1,152 +1,188 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Nikki Esguerra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>nikki esguerra</title>
+
+	<!-- Google Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Livvic&display=swap">
+
+	<!-- My CSS -->
 	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<!-- Fav Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
 </head>
 
 
 <body onload="startTime()">
-    
+
     <div class="topbar" id="clock"></div>
-    
-    <div class="corner">
-        <img src="images/gud.png">
-    </div>
-    
-    <div class="stickycontent">
-        <div class="heading">
-            Nikki Esguerra
-        </div>
 
-        <div class="bio">
-            <p><img src="images/me.png"></p>
-            
-            <p>Avid tea drinker and motivated junior studying Electrical Engineering at the University of California, Davis. On my free time you'll find me drawing, eating, or napping. I am always down for a yerba mate, and you can trust me with your aux cord if you like 80s mainstream pop music.
-            </p>
+    <div class="homepage pad" id="home">
+      <img src="images/hi.png">
+			<div class="buttons">
+        <a href="resume2019.pdf" target="_blank">
+          <button class="btn">resume</button>
+        </a>
+      </div>
+		</div>
 
-            <p><a href="resume2019.pdf" class="button">Resume</a></p>
-        </div>
-        
-        <div class="nav">
-            
-            <ul>
-                <li><a href="https://desguerra.github.io/">Home</a></li>
-                <li><a href="https://github.com/desguerra" target="_blank">Github</a></li>
-                <li><a href="https://www.linkedin.com/in/nikkiesg/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://glitch.com/@toastynikki" target="_blank">Glitch</a></li>
-                <li><a href="funstuff.html">Fun Stuff</a></li>
-            </ul>
-            
-        </div>
-    </div>
-    
-    
-    <div class="scrollcontent">
-        <h1>P R O J E C T S .</h1>
-        
-        <br>
-        <div class="proj">
-            <div class="proj-title">personal website.</div>
-            <div class="proj-content">
-                <p>
-                    This personal website is an ongoing project of mine!
-                </p>
-                <p>
-                    My goal is to add a little bit to this website on my free time! I view this project as a continuous learning experience for ways to apply code to express my creativity.<br><i>Hand-coded and made with love &lt;3</i>
-                </p>
+		<div class="about pad" id="about">
+      <h1>who am i?</h1>
+			<div class="detail">
+				<p>A self-motivated senior studying <span class="bright">
+					Electrical Engineering</span> at the <span class="bright">University
+						of California, Davis</span>. I enjoy video games, digital art, skincare,
+						and 80s mainstream pop music.
+				</p>
+			</div>
+		</div>
 
-                <div class="moreinfo">&hearts;</div>
-            </div>
-        </div>
-        
-        <br>
-        <div class="proj">
-            <div class="proj-title">[eec10 final profect] :: Sound Sensor.</div>
-            <div class="proj-content">
-                <p>
-                    Implemented an electronic system that located and recorded the direction of a sound source using two microphones, servo motor that pointed in the sound direction, TIVA microcontroller, MyDAQ, Energia, and LabVIEW. Included a GUI that incorporated control and display features on LabVIEW, servo sound localization code using the TIVA microcontroller, stereo recording, timed recording, and audio band filtering code.
-                </p>
-                
-                <div class="picgrid">
-                    <img src="images/proj1-4.jpg">
-                </div>
+		<div class="projects pad" id="projects">
+      <h1>Projects</h1>
 
-                <div class="moreinfo"><a href="soundsensor.html">More info &hearts;</a></div>
-            </div>
-        </div>
-        
-        <br>
-        <div class="proj">
-            <div class="proj-title">[discord bot] :: Frankki.</div>
-            <div class="proj-content">
-                <p><b>Frankki</b> is a Discord bot created with JavaScript and deployed using Glitch.com. Specifically personalized to fit in with the servers between some friends and me, <b>Frankki</b> was designed to make our servers more interactive. <b>Frankki</b>'s features include: modern-fantasy leveling up and health system, direct message greeting users joining a server, secret random messages, responses to certain words/phrases/inside jokes between some friends and me.</p>
-                <p>This bot is up and running, but still a work in progress! Future implementations are still in the making, so stay tuned! Started February 2019.</p>
-                <p><a href="#frankki">Invite Frankki to your server!</a></p>
+			<div class="proj">
 
-                <div class="moreinfo">&hearts;</div>
-            </div>
-        </div>
-        
-        <br>
-        <div class="proj">
-            <div class="proj-title">[website] :: Toasty Tarot.</div>
-            <div class="proj-content">
-                <p>
-                    A website to help people learn the art of tarot in a fun, simple way.
-                </p>
-                <p>
-                    Come check it out at <a href="https://toastytarot.glitch.me/" target="_blank">toastytarot.glitch.me</a>!
-                </p>
-                <p>
-                    <a href="https://glitch.com/@toastynikki" target="_blank">[my Glitch profile]</a>
-                </p>
+				<div class="row">
+					<div class="thumb">
+						<a href="https://github.com/desguerra/desguerra.github.io" target="_blank">
+						<img src="images/pw.jpg" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="https://github.com/desguerra/desguerra.github.io"
+							target="_blank">
+							<h2>Portfolio Website</h2>
+							<div class="short">you're looking at it :)</div>
+						</a></div>
+					</div>
+				</div>
 
-                <div class="moreinfo">&hearts;</div>
-            </div>
-        </div>
-        
-        <br>
-        <div class="proj">
-            <div class="proj-title">[hack-a-thon] :: Sesame.</div>
-            <div class="proj-content">
-                <p>
-                    Placed top finalist at UC Davis’ annual Create-a-thon (2018) with a team utilizing SolidWorks and Arduino to create a prototype of an IoT smart home window device in the span of 24 hours.
-                </p>
-                <p>
-                    Prototype that we named "<b>Sesame</b>" was a smart window device that opened and closed a window depending on the user's preferred room temperature (adjusted through a smartphone app), and the temperature outside.
-                </p>
+				<div class="row">
+						<div class="thumb">
+							<a href="#soundsensor">
+    					<img src="images/t1.jpg" alt="sound sensor">
+  						</a>
+  						<div class="desc"><a href="#soundsensor">
+								<h2>Sound Sensor</h2>
+								<div class="short">detects sound direction</div>
+							</a></div>
+						</div>
+				</div>
 
-                <div class="moreinfo">&hearts;</div>
-            </div>
-        </div>
-        
-        <br>
-        <div class="proj">
-            <div class="proj-title">project 6.</div>
-            <div class="proj-content">
-                <p>I have <a style="cursor: not-allowed">no idea</a> what I'm doing.</p>
+				<div class="row notyet">
+						<div class="thumb">
+							<a href="#proj">
+    					<img src="images/comingsoon.png" alt="sound sensor">
+  						</a>
+							<div class="desc"><a href="#proj">
+								<h2>Project Title</h2>
+								<div class="short">Project 2</div>
+							</a></div>
+						</div>
+				</div>
 
-                <div class="moreinfo"><a href="#proj6">More info &hearts;</a></div>
-            </div>
-        </div>
+				<div class="row notyet">
+					<div class="thumb">
+						<a href="#proj">
+						<img src="images/comingsoon.png" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="#proj">
+							<h2>Project Title</h2>
+							<div class="short">Project 3</div>
+						</a></div>
+					</div>
+				</div>
 
-        <br>
+				<div class="row notyet">
+					<div class="thumb">
+						<a href="#proj">
+						<img src="images/comingsoon.png" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="#proj">
+							<h2>Project Title</h2>
+							<div class="short">Project 4</div>
+						</a></div>
+					</div>
+				</div>
+
+
+				<div class="row notyet">
+					<div class="thumb">
+						<a href="#proj">
+						<img src="images/comingsoon.png" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="#proj">
+							<h2>Project Title</h2>
+							<div class="short">Project 5</div>
+						</a></div>
+					</div>
+				</div>
+
+				<div class="row notyet">
+					<div class="thumb">
+						<a href="#proj">
+						<img src="images/comingsoon.png" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="#proj">
+							<h2>Project Title</h2>
+							<div class="short">Project 6</div>
+						</a></div>
+					</div>
+				</div>
+
+				<div class="row notyet">
+					<div class="thumb">
+						<a href="#proj">
+						<img src="images/comingsoon.png" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="#proj">
+							<h2>Project Title</h2>
+							<div class="short">Project 7</div>
+						</a></div>
+					</div>
+				</div>
+
+				<div class="row notyet">
+					<div class="thumb">
+						<a href="#proj">
+						<img src="images/comingsoon.png" alt="sound sensor">
+						</a>
+						<div class="desc"><a href="#proj">
+							<h2>Project Title</h2>
+							<div class="short">Project 8</div>
+						</a></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="clearfix"></div>
+
 	</div>
 
+	<div id="footer">
 
-	<footer class="footer">
-		<p>(c) Nikki Esguerra 2019</p>
-	</footer>
+		<span class="left">(c) 2019 Nikki Esguerra.</span>
+		<span class="right">
+			<a href="https://github.com/desguerra" target="_blank">GitHub</a> |
+			<a href="https://linkedin.com/in/nikkiesg/" target="_blank">LinkedIn</a>
+		</span>
+		<div style="clear: both"></div>
 
-    
-    <script src="main.js"></script>
+	</div>
 
-    
+	<!-- My JS -->
+  <script src="main.js"></script>
+
 </body>
 
 
