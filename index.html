@@ -4,11 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>nikki esguerra</title>
+	<title>&#9789; &#10024; nikki esguerra &#10024; &#9790;</title>
 
 	<!-- Google Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Livvic&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 	<!-- My CSS -->
 	<link rel="stylesheet" type="text/css" href="main.css">
@@ -25,167 +29,124 @@
 
 
 <body onload="startTime()">
-
-    <div class="topbar" id="clock"></div>
-
-    <div class="homepage pad" id="home">
-      <img src="images/hi.png">
-			<div class="buttons">
-        <a href="resume2021.pdf" target="_blank">
-          <button class="btn">resume</button>
-        </a>
-      </div>
-		</div>
-
-		<div class="about pad" id="about">
-      <h1>who am i?</h1>
-			<div class="detail">
-				<p>Hi, I'm Nikki. I am currently working at <span class="bright">Juni Learning</span> as a 
-						<span class="bright">Computer Science Instructor</span> for kids ages 8-18. 
-						I graduated with a Bachelor's of Science
-						degree in <span class="bright">Electrical Engineering</span> at the <span class="bright">University
-						of California, Davis</span>. I enjoy video games, digital art, skincare,
-						and 80s mainstream pop music.
-				</p>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper indigo accent-3">
+				<div class="brand-logo" id="clock"></div>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.html"><i class="material-icons">favorite_border</i></a></li>
+					<li><a href="#about"><i class="material-icons">face</i></a></li>
+					<li><a href="#projects"><i class="material-icons">code</i></a></li>
+				</ul>
 			</div>
-		</div>
-
-		<div class="projects pad" id="projects">
-      <h1>Projects</h1>
-
-			<div class="proj">
-
-				<div class="row">
-					<div class="thumb">
-						<a href="https://github.com/desguerra/desguerra.github.io" target="_blank">
-						<img src="images/pw.jpg" alt="portfolio website">
-						</a>
-						<div class="desc"><a href="https://github.com/desguerra/desguerra.github.io"
-							target="_blank">
-							<h2>Portfolio Website</h2>
-							<div class="short">you're looking at it :)</div>
-						</a></div>
-					</div>
-				</div>
-
-				<div class="row">
-						<div class="thumb">
-							<a href="#soundsensor">
-    					<img src="images/t1.jpg" alt="sound sensor">
-  						</a>
-  						<div class="desc"><a href="#soundsensor">
-								<h2>Sound Sensor</h2>
-								<div class="short">detects sound direction</div>
-							</a></div>
-						</div>
-				</div>
-
-				<div class="row">
-						<div class="thumb">
-							<a href="https://github.com/desguerra/Frankki" target="_blank">
-    					<img src="images/comingsoon.png" alt="Frankki">
-  						</a>
-							<div class="desc"><a href="https://github.com/desguerra/Frankki"
-								target="_blank">
-								<h2>Frankki</h2>
-								<div class="short">fun discord bot</div>
-							</a></div>
-						</div>
-				</div>
-
-				<div class="row notyet">
-					<div class="thumb">
-						<a href="#proj">
-						<img src="images/comingsoon.png" alt="sound sensor">
-						</a>
-						<div class="desc"><a href="#proj">
-							<h2>Project Title</h2>
-							<div class="short">Project 3</div>
-						</a></div>
-					</div>
-				</div>
-
-				<div class="row notyet">
-					<div class="thumb">
-						<a href="#proj">
-						<img src="images/comingsoon.png" alt="sound sensor">
-						</a>
-						<div class="desc"><a href="#proj">
-							<h2>Project Title</h2>
-							<div class="short">Project 4</div>
-						</a></div>
-					</div>
-				</div>
-
-
-				<div class="row notyet">
-					<div class="thumb">
-						<a href="#proj">
-						<img src="images/comingsoon.png" alt="sound sensor">
-						</a>
-						<div class="desc"><a href="#proj">
-							<h2>Project Title</h2>
-							<div class="short">Project 5</div>
-						</a></div>
-					</div>
-				</div>
-
-				<div class="row notyet">
-					<div class="thumb">
-						<a href="#proj">
-						<img src="images/comingsoon.png" alt="sound sensor">
-						</a>
-						<div class="desc"><a href="#proj">
-							<h2>Project Title</h2>
-							<div class="short">Project 6</div>
-						</a></div>
-					</div>
-				</div>
-
-				<div class="row notyet">
-					<div class="thumb">
-						<a href="#proj">
-						<img src="images/comingsoon.png" alt="sound sensor">
-						</a>
-						<div class="desc"><a href="#proj">
-							<h2>Project Title</h2>
-							<div class="short">Project 7</div>
-						</a></div>
-					</div>
-				</div>
-
-				<div class="row notyet">
-					<div class="thumb">
-						<a href="#proj">
-						<img src="images/comingsoon.png" alt="sound sensor">
-						</a>
-						<div class="desc"><a href="#proj">
-							<h2>Project Title</h2>
-							<div class="short">Project 8</div>
-						</a></div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="clearfix"></div>
-
+		</nav>
+	</div>
+		
+    
+    <div class="container center" id="home">
+    	<img class="responsive-img" src="images/hi.png">
+		<div class="buttons btnclass">
+			<a class="btn-large pink lighten-4 resume" href="resume2021.pdf" target="_blank">
+				r e s u m e
+			</a>
+      	</div>
 	</div>
 
-	<div id="footer">
+	<div class="row white whoami" id="about">
+		<div class="col l2 m12 s12"></div>
+		<div class="col center l2 m12 s12">
+			<h1>who am i?</h1>
+		</div>
+		<div class="col l1 m12 s12"></div>
+      	<div class="col l6 m12 s12">
+			<p class="flow-text">Hi, I'm <span class="indigoclass"><b>Nikki</b></span>.</p>
+			<p class="flow-text">I am currently an <span class="bright">Instructor Success Specialist</span>
+				and <span class="bright">Computer Science Instructor</span> at 
+				<span class="bright">Juni Learning</span>. I graduated with a Bachelor's of Science
+				degree in <span class="bright">Electrical Engineering</span> from the 
+				<span class="bright">University of California, Davis</span>. I enjoy 
+				video games, skincare, mechanical keyboards, and 80s pop music.
+			</p>
+		</div>
+		<div class="col l1 m12 s12"></div>
+	</div>
 
-		<span>(c) 2020 Nikki Esguerra.</span>
-		<span>
-			<a href="https://github.com/desguerra" target="_blank">GitHub</a> |
-			<a href="https://linkedin.com/in/nikkiesg/" target="_blank">LinkedIn</a>
-		</span>
+	<div class="container" id="projects">
+		<h2>projects</h2>
+		<div class="row">
 
+			<div class="col l4 m12 s12">
+				<div class="card medium">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="images/comingsoon.png" alt="portfolio website">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">portfolio website<i class="material-icons right">keyboard_capslock</i></span>
+						  <p><a class="indigoclass" href="https://github.com/desguerra/desguerra.github.io" target="_blank">link to code</a></p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title activator grey-text text-darken-4">portfolio website<i class="material-icons right">close</i></span>
+						<p>you're looking at it :)</p>
+						<p>made with HTML, CSS, JS, and Materialize</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l4 m12 s12">
+				<div class="card medium">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="images/t1.jpg" alt="sound sensor">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">sound sensor<i class="material-icons right">keyboard_capslock</i></span>
+						  <p><a class="indigoclass" href="#soundsensor">link to page</a></p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title activator grey-text text-darken-4">sound sensor<i class="material-icons right">close</i></span>
+						<p>motor points towards the direction of sound upon detection</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col l4 m12 s12">
+				<div class="card medium">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="images/comingsoon.png" alt="Frankki">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Frankki<i class="material-icons right">keyboard_capslock</i></span>
+						  <p><a class="indigoclass" href="https://github.com/desguerra/Frankki" target="_blank">link to code</a></p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title activator grey-text text-darken-4">Frankki<i class="material-icons right">close</i></span>
+						<p>a fun Discord bot named Frankki</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
 	</div>
 
 	<!-- My JS -->
-  <script src="main.js"></script>
+  	<script src="main.js"></script>
+
+	<!-- Compiled and minified Materialize JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		   
 
 </body>
+
+<footer class="page-footer footerclass">
+	<div class="footer-copyright">
+		<div class="container">
+			(c) 2021 nikki esguerra.
+			<span class="right">
+				<a class="grey-text text-lighten-4" href="https://github.com/desguerra" target="_blank">github</a> |
+				<a class="grey-text text-lighten-4" href="https://linkedin.com/in/nikkiesg/" target="_blank">linkedin</a>
+			</span>
+		</div>
+	</div>
+</footer>
 
 
 </html>
