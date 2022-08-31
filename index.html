@@ -3,150 +3,22 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
 	<title>&#9789; &#10024; nikki esguerra &#10024; &#9790;</title>
 
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Livvic&display=swap">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- MY CSS -->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
-	<!-- Compiled and minified Materialize CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-	<!-- My CSS -->
-	<link rel="stylesheet" type="text/css" href="main.css">
-
-	<!-- Fav Icons -->
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#00aba9">
-	<meta name="theme-color" content="#ffffff">
 </head>
 
 
-<body onload="startTime()">
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper indigo accent-3">
-				<div class="brand-logo" id="clock"></div>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="index.html"><i class="material-icons">favorite_border</i></a></li>
-					<li><a href="#about"><i class="material-icons">face</i></a></li>
-					<li><a href="#projects"><i class="material-icons">code</i></a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-		
+<body>
+	
     
-    <div class="container center" id="home">
-    	<img class="responsive-img" src="images/hi.png">
-		<div class="buttons btnclass">
-			<a class="btn-large pink lighten-4 resume" href="resume2022.pdf" target="_blank">
-				r e s u m e
-			</a>
-      	</div>
-	</div>
-
-	<div class="row white whoami" id="about">
-		<div class="col l2 m12 s12"></div>
-		<div class="col center l2 m12 s12">
-			<h1>who am i?</h1>
-		</div>
-		<div class="col l1 m12 s12"></div>
-      	<div class="col l6 m12 s12">
-			<p class="flow-text">Hi, I'm <span class="indigoclass"><b>Nikki</b></span>.</p>
-			<p class="flow-text">I am currently an <span class="bright">Instructor Success Specialist</span>
-				and <span class="bright">Computer Science Instructor</span> at 
-				<span class="bright">Juni Learning</span>. I graduated with a Bachelor's of Science
-				degree in <span class="bright">Electrical Engineering</span> from the 
-				<span class="bright">University of California, Davis</span>. I enjoy 
-				video games, skincare, mechanical keyboards, and 80s pop music.
-			</p>
-		</div>
-		<div class="col l1 m12 s12"></div>
-	</div>
-
-	<div class="container" id="projects">
-		<h2>projects</h2>
-		<div class="row">
-
-			<div class="col l4 m12 s12">
-				<div class="card medium">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="images/comingsoon.png" alt="portfolio website">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">portfolio website<i class="material-icons right">keyboard_capslock</i></span>
-						  <p><a class="indigoclass" href="https://github.com/desguerra/desguerra.github.io" target="_blank">link to code</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title activator grey-text text-darken-4">portfolio website<i class="material-icons right">close</i></span>
-						<p>you're looking at it :)</p>
-						<p>made with HTML, CSS, JS, and Materialize</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col l4 m12 s12">
-				<div class="card medium">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="images/t1.jpg" alt="sound sensor">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">sound sensor<i class="material-icons right">keyboard_capslock</i></span>
-						  <p><a class="indigoclass" href="#soundsensor">link to page (under construction)</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title activator grey-text text-darken-4">sound sensor<i class="material-icons right">close</i></span>
-						<p>motor points towards the direction of sound upon detection</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col l4 m12 s12">
-				<div class="card medium">
-					<div class="card-image waves-effect waves-block waves-light">
-						<img class="activator" src="images/comingsoon.png" alt="Frankki">
-					</div>
-					<div class="card-content">
-						<span class="card-title activator grey-text text-darken-4">Frankki<i class="material-icons right">keyboard_capslock</i></span>
-						  <p><a class="indigoclass" href="https://github.com/desguerra/Frankki" target="_blank">link to code</a></p>
-					</div>
-					<div class="card-reveal">
-						<span class="card-title activator grey-text text-darken-4">Frankki<i class="material-icons right">close</i></span>
-						<p>a fun Discord bot named Frankki</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-
-	<!-- My JS -->
-  	<script src="main.js"></script>
-
-	<!-- Compiled and minified Materialize JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		   
+    <!-- MY SCRIPT -->
+    <script src="./assets/js/script.js"></script>
 
 </body>
-
-<footer class="page-footer footerclass">
-	<div class="footer-copyright">
-		<div class="container">
-			(c) 2022 nikki esguerra.
-			<span class="right">
-				<a class="grey-text text-lighten-4" href="https://github.com/desguerra" target="_blank">github</a> |
-				<a class="grey-text text-lighten-4" href="https://linkedin.com/in/nikkiesg/" target="_blank">linkedin</a>
-			</span>
-		</div>
-	</div>
-</footer>
-
-
 </html>
