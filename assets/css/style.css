@@ -140,6 +140,16 @@ footer {
     padding: 40px 0;
 }
 
+footer a,
+footer a:active,
+footer a:focus {
+    color: var(--primary);
+}
+
+footer a:hover {
+    color: var(--tertiary);
+}
+
 /* HERO */
 .hero {
     background-color: var(--tertiary);
