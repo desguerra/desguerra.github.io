@@ -1,26 +1,36 @@
 const footerCredEl = document.querySelector("#footer-credit");
-const toggleSwitch = document.querySelector('#theme-switch input[type="checkbox"]');
+const btnThemeEl = document.querySelector("#btn-theme");
 
-const currentTheme = localStorage.getItem('theme');
-
-/* THEME SLIDER */
-if (currentTheme) {
+/* SET THEME */
+function setTheme() {
+    const currentTheme = localStorage.getItem('theme') || 'mocha';
     document.documentElement.setAttribute('data-theme', currentTheme);
+    btnThemeEl.textContent = currentTheme;
+};
 
-    if (currentTheme === 'plums') {
-        toggleSwitch.checked = true;
-    }
-}
+/* THEME BUTTON */
+function switchTheme() {
+    const themeName = localStorage.getItem('theme');
+    let switchValue = 'mocha';
 
-function switchTheme (event) {
-    if (event.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'plums');
-        localStorage.setItem('theme', 'plums');
+    if (themeName === 'mocha') {
+        switchValue = 'whimsical';
     }
-    else {
-        document.documentElement.setAttribute('data-theme', 'mocha');
-        localStorage.setItem('theme', 'mocha');
+    else if (themeName === 'whimsical') {
+        switchValue = 'beachy';
     }
+    else if (themeName === 'beachy') {
+        switchValue = 'plums';
+    }
+    else if (themeName === 'plums') {
+        switchValue = 'amethyst';
+    }
+    else if (themeName === 'amethyst') {
+        switchValue = 'mocha';
+    }
+    localStorage.setItem('theme', switchValue);
+
+    setTheme();
 };
 
 /* DATE - get current year for `footer` */
@@ -33,7 +43,10 @@ const displayCredit = () => {
 };
 
 /* CALL INITIAL FUNCTIONS */
+setTheme();
 displayCredit();
 
 /* EVENT LISTENERS */
-toggleSwitch.addEventListener('change', switchTheme, false);
+// toggleSwitch.addEventListener('change', switchTheme, false);
+
+btnThemeEl.addEventListener('click', switchTheme);
