@@ -7,15 +7,15 @@ const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
 
-    if (currentTheme === 'whimsical') {
+    if (currentTheme === 'plums') {
         toggleSwitch.checked = true;
     }
 }
 
 function switchTheme (event) {
     if (event.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'whimsical');
-        localStorage.setItem('theme', 'whimsical');
+        document.documentElement.setAttribute('data-theme', 'plums');
+        localStorage.setItem('theme', 'plums');
     }
     else {
         document.documentElement.setAttribute('data-theme', 'mocha');

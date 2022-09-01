@@ -9,20 +9,36 @@
     --border-radius: .3rem;
 }
 
-[data-theme=celestine] {
-    --primary: #a3add1;
-    --secondary: #6f5e95;
-    --tertiary: #45235f;
-    --light-dark: #31253d;
-    --dark: #2b2030;
-}
-
 [data-theme=whimsical] {
     --primary: #e6b0fe;
     --secondary: #b7a1f4;
     --tertiary: #848dec;
     --light-dark: #4e6bd3;
     --dark: #234db9;
+}
+
+[data-theme=beachy] {
+    --primary: #f2f2f0;
+    --secondary: #bde8f1;
+    --tertiary: #819fa7;
+    --light-dark: #5b6e74;
+    --dark: #1b1b1b;
+}
+
+[data-theme=plums] {
+    --primary: #f5c3de;
+    --secondary: #e195c6;
+    --tertiary: #9d59ac;
+    --light-dark: #632b68;
+    --dark: #291037;
+}
+
+[data-theme=celestine] {
+    --primary: #a3add1;
+    --secondary: #6f5e95;
+    --tertiary: #45235f;
+    --light-dark: #31253d;
+    --dark: #2b2030;
 }
 
 * {
@@ -32,7 +48,7 @@
 
 body {
     background-color: var(--primary);
-    margin: 100px;
+    margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
     color: var(--light-dark);
@@ -147,6 +163,16 @@ input:checked + .slider:before {
   
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* SELECTION */
+::-moz-selection {
+    color: white;
+    background: var(--secondary);
+}
+::selection {
+    color: white;
+    background: var(--secondary);
 }
 
 /* HELPER CLASSES */
