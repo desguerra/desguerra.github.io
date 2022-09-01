@@ -105,7 +105,7 @@ nav ul li a:active,
 nav ul li a:focus {
     color: var(--primary);
     text-decoration: none;
-    padding:  5px 15px;
+    padding: 5px 15px;
     font-weight: bold;
 }
 
