@@ -26,6 +26,9 @@ function switchTheme() {
         switchValue = 'amethyst';
     }
     else if (themeName === 'amethyst') {
+        switchValue = 'berry';
+    }
+    else if (themeName === 'berry') {
         switchValue = 'mocha';
     }
     localStorage.setItem('theme', switchValue);
@@ -37,7 +40,7 @@ function switchTheme() {
 const displayCredit = () => {
     let currentYear =  new Date().getFullYear();
     let credit = document.createElement("span");
-    credit.innerHTML = `&copy; ${currentYear} - made with 🤍 by <span class="strong">nikki esguerra</span>`;
+    credit.innerHTML = `&copy; ${currentYear} - made with 🤍 by <strong>nikki esguerra</strong>`;
 
     footerCredEl.appendChild(credit);
 };
