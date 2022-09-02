@@ -26,11 +26,15 @@ function switchTheme() {
         switchValue = 'amethyst';
     }
     else if (themeName === 'amethyst') {
+        switchValue = 'matcha';
+    }
+    else if (themeName === 'matcha') {
         switchValue = 'berry';
     }
     else if (themeName === 'berry') {
         switchValue = 'mocha';
     }
+
     localStorage.setItem('theme', switchValue);
 
     setTheme();

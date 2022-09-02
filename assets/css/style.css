@@ -41,12 +41,20 @@
     --dark: #2b2030;
 }
 
+[data-theme=matcha] {
+    --primary: #EBF1BF;
+    --secondary: #B4C59D;
+    --tertiary: #7E997B;
+    --light-dark: #476C59;
+    --dark: #104037;
+}
+
 [data-theme=berry] {
     --primary: #B9DFEE;
-    --secondary: #B4ACC8;
-    --tertiary: #AF78A2;
-    --light-dark: #A9457B;
-    --dark: #A41155;
+    --secondary: #9FA7BC;
+    --tertiary: #84708A;
+    --light-dark: #6A3857;
+    --dark: #330018;
 }
 
 * {
