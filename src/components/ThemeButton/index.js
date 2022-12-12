@@ -4,7 +4,7 @@ function ThemeButton() {
 
   return (
     <>
-      <button>theme</button>
+      <button>current theme</button>
     </>
   );
 }
