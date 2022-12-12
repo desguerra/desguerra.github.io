@@ -1,10 +1,16 @@
 import React from 'react';
 
 function Footer() {
+  let currentYear =  new Date().getFullYear();
+  const credit = <span>&copy; {currentYear} - made with 🤍 by <span className='strong'>nikki esguerra</span></span>;
 
   return (
     <footer>
-      footer
+      <div className='footer-credit'>{credit}</div>
+
+      <div>
+          <a href="https://github.com/desguerra" target="_blank" rel="noreferrer">github</a> | <a href="https://linkedin.com/in/nikkiesg/" target="_blank" rel="noreferrer">linkedin</a>
+      </div>
     </footer>
   );
 }
