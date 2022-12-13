@@ -6,7 +6,7 @@ function Hero() {
     <section>
       <h1>nikki esguerra</h1>
 
-      <button>resume</button>
+      <button className='btn'>resume</button>
     </section>
   );
 }
