@@ -5,7 +5,7 @@ function Footer() {
   const credit = <span>&copy; {currentYear} - made with 🤍 by <span className='strong'>nikki esguerra</span></span>;
 
   return (
-    <footer>
+    <footer className='footer flex flex-col justify-center text-center py-12'>
       <div className='footer-credit'>{credit}</div>
 
       <div>

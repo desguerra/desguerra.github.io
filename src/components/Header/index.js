@@ -5,7 +5,7 @@ import ThemeButton from '../ThemeButton';
 function Header() {
 
   return (
-    <header>
+    <header className='header flex flex-wrap justify-between content-center'>
       <Navigation />
       <ThemeButton />
     </header>

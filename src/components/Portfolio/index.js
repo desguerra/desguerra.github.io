@@ -4,18 +4,24 @@ import Project from '../Project';
 function Portfolio() {
 
   return (
-    <section>
+    <section className='portfolio flex flex-col justify-center text-center p-12'>
+
       <h2>web development projects</h2>
 
-      <Project />
-      <Project />
-      <Project />
+      <div className='flex flex-wrap justify-center p-2'>
+        <Project />
+        <Project />
+        <Project />
+      </div>
 
       <h2>passion projects</h2>
 
-      <Project />
-      <Project />
-      <Project />
+      <div className='flex flex-wrap justify-center p-2'>
+        <Project />
+        <Project />
+        <Project />
+      </div>
+
     </section>
   );
 }

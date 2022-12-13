@@ -3,12 +3,12 @@ import React from 'react';
 function Contact() {
 
   return (
-    <section>
+    <section className='contact flex flex-col justify-center py-12 px-32'>
       <h2>contact me</h2>
 
-      <div>
+      <p>
         contact me stuff
-      </div>
+      </p>
     </section>
   );
 }
