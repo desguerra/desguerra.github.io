@@ -2,10 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Black";
+  src: local("OkineSans-Black"),
+    url("./assets/fonts/OkineSans-Black.otf") format("truetype");
+}
+@font-face {
+  font-family: "BlackOutline";
+  src: local("OkineSans-BlackOutline"),
+    url("./assets/fonts/OkineSans-BlackOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Bold";
+  src: local("OkineSans-Bold"),
+    url("./assets/fonts/OkineSans-Bold.otf") format("truetype");
+}
+@font-face {
+  font-family: "BoldOutline";
+  src: local("OkineSans-BoldOutline"),
+    url("./assets/fonts/OkineSans-BoldOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Light";
+  src: local("OkineSans-Light"),
+    url("./assets/fonts/OkineSans-Light.otf") format("truetype");
+}
+@font-face {
+  font-family: "LightOutline";
+  src: local("OkineSans-LightOutline"),
+    url("./assets/fonts/OkineSans-LightOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Medium";
+  src: local("OkineSans-Medium"),
+    url("./assets/fonts/OkineSans-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "MediumOutline";
+  src: local("OkineSans-Medium"),
+    url("./assets/fonts/OkineSans-MediumOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Regular";
+  src: local("OkineSans-Regular"),
+    url("./assets/fonts/OkineSans-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "RegularOutline";
+  src: local("OkineSans-RegularOutline"),
+    url("./assets/fonts/OkineSans-RegularOutline.otf") format("truetype");
+}
+@font-face {
+  font-family: "Thin";
+  src: local("OkineSans-Thin"),
+    url("./assets/fonts/OkineSans-Thin.otf") format("truetype");
+}
+@font-face {
+  font-family: "ThinOutline";
+  src: local("OkineSans-ThinOutline"),
+    url("./assets/fonts/OkineSans-ThinOutline.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: local("Quicksand-Regular"),
+    url("./assets/fonts/Quicksand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: local("Quicksand-Medium"),
+    url("./assets/fonts/Quicksand-Medium.ttf") format("truetype");
+}
+
 :root {
-  --primary: #FAF8FF;
-  --secondary: #ACA6D2;
-  --tertiary: #474554;
+  --primary: #FFE4F7;
+  --secondary: #8E5A71;
+  --tertiary: #5A2B41;
   --light: white;
   --dark: black;
   --border-radius: .8rem;
@@ -17,12 +89,11 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Quicksand-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.125rem;
+  letter-spacing: 0.1em;
 }
 
 code {
@@ -40,10 +111,12 @@ h6 {
     font-weight: bold;
     line-height: 1.25;
     letter-spacing: 0.05em;
+    font-family: 'Bold';
 }
 
 h1 {
   font-size: 3rem;
+  font-family: 'Black';
 }
 h2 {
   font-size: 2.25rem;
@@ -99,18 +172,23 @@ p {
 .btn {
   font-size: 1.125rem;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 12px 25px;
   border: none;
   outline: none;
   border-radius: var(--border-radius);
   box-shadow: 4px 4px var(--dark);
   transform: translate(-1px, -1px);
+  font-family: 'Regular';
 }
-.btn-theme {
+.btn-dark {
   background-color: var(--tertiary);
   color: var(--primary);
 }
-.btn-resume {
+.btn-medium {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+.btn-light {
   background-color: var(--primary);
   color: var(--dark);
 }
@@ -119,17 +197,39 @@ p {
   transform: translate(0, 0);
   box-shadow: 3px 3px var(--dark);
 }
-.btn-theme:hover {
+.btn-dark:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
-.btn-resume:hover {
+.btn-medium:hover {
+  background-color: var(--primary);
+  color: var(--dark);
+}
+.btn-light:hover {
   background-color: var(--secondary);
   color: var(--primary);
 }
 
+.light {
+  color: var(--primary);
+}
+.medium {
+  color: var(--secondary);
+}
+.dark {
+  color: var(--tertiary);
+}
+
 .strong {
   font-weight: bold;
+  font-family: 'Quicksand-Medium';
+}
+
+.ol-black {
+  font-family: 'BlackOutline';
+}
+.ol-bold {
+  font-family: 'BoldOutline';
 }
 
 /* SELECTION */

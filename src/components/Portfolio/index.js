@@ -1,5 +1,6 @@
 import React from 'react';
-import Project from '../Project';
+import ProjectsWeb from '../ProjectsWeb';
+import ProjectsPassion from '../ProjectsPassion';
 
 function Portfolio() {
 
@@ -8,18 +9,14 @@ function Portfolio() {
 
       <h2>web development projects</h2>
 
-      <div className='flex flex-wrap justify-center p-2'>
-        <Project />
-        <Project />
-        <Project />
+      <div className='flex flex-wrap justify-center text-center p-2'>
+        <ProjectsWeb />
       </div>
 
       <h2>passion projects</h2>
 
-      <div className='flex flex-wrap justify-center p-2'>
-        <Project />
-        <Project />
-        <Project />
+      <div className='flex flex-wrap justify-center text-center p-2'>
+        <ProjectsPassion />
       </div>
 
     </section>

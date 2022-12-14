@@ -4,7 +4,7 @@ function About() {
 
   return (
     <section className='about flex flex-col justify-center py-12 px-32'>
-      <h2>who am I?</h2>
+      <h2 className='dark'>who am I?</h2>
 
       <div>
         <p>
